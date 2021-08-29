@@ -1,0 +1,24 @@
+body {
+ background: #e9e9e9;
+ font-family: 'Roboto', sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+li, i {
+    margin-right: 5px;
+}
+
+img {
+    width: 100px;
+}
+nav {
+    padding: 5px;
+}
+
+span a {
+  color: black;
+  display: inline;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
