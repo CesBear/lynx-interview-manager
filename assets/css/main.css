@@ -14,11 +14,11 @@ img {
 }
 nav {
     padding: 5px;
-    height: 130px;
+    height: 85px !important;
 }
 
 span a {
-  color: black;
+  color:greenyellow;
   display: inline;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
@@ -29,22 +29,15 @@ span a {
 }
 
 .primary-bg-color {
-    background-color: #455054;
+    background-color: #06304b;
 }
 
 .secondary-bg-color {
-    background-color: #308695;
+    background-color: #ffce3f;
 }
 
 .auxiliar-1-color {
-    background-color: #D45769;
-}
-
-.auxiliar-2-color {
-    background-color: #C1867B;
-}
-.auxiliar-3-color {
-    background-color: #D4CFC9;
+    background-color: #0094b6;
 }
 
 .hero-image {
@@ -52,6 +45,13 @@ span a {
     height: 100vh;
     position: relative;
 }
+
+.hero-image2 {
+    background: url("../images/calendario.jpg") center/cover;
+    height: 100vh;
+    position: relative;
+}
+
 .hero-body {
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -59,9 +59,67 @@ span a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 70%;
+    width: 60%;
+}
+
+.hero-body-calendario {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 80%;
+    width: 60%;
 }
 
 h1, h6{
     font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.css-square {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+.css-square:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+}
+
+.page-footer {
+    background-color: #0094b6 !important
+}
+
+@media screen and (max-width: 900px) {
+    .hero-body {
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 81%;
+        width: 47%;
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+.clients {
+    width: auto;
 }

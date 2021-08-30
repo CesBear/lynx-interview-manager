@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynx Interview Manager</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7deeeb5873.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="navbar-fixed">
+        <nav class="section auxiliar-1-color">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo css-square"><img src="/assets/images/lynx-green.png" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html"><i class="fas fa-home "></i>Home</a></li>
+                    <li><a href="./candidatos.html"><i class="fas fa-user-ninja "></i>Candidatos</a></li>
+                    <li><a href="./entrevistadores.html"><i class="fas fa-door-open shaddow-effect"></i>Entrevistadores</a></li>
+                    <li><a href="./calendario.html"><i class="far fa-calendar-check shaddow-effect"></i>Agenda tu entrevista!</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--Mobile NavBar-->
+    <ul class="sidenav secondary-bg-color" id="mobile-demo">
+      <ul id="nav-mobile" class="left">
+        <li><a href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="./pages/candidatos.html"><i class="fas fa-user-ninja "></i >Candidatos</a></li>
+        <li><a href="./pages/entrevistadores.html"><i class="fas fa-door-open shaddow-effect"></i>Entrevistadores</a></li>
+        <li><a href="./pages/calendario.html"><i class="far fa-calendar-check shaddow-effect"></i>Agenda tu entrevista!</a></li>
+      </ul>
+    </ul>
+
+    <!-- Hero Page -->
+    <div class="section hero-image2">
+        <div class="hero-body-calendario">
+           <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger red" href="#modal1">Crear Evento</a>
+             <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <!-- Modal Form -->
+                    <div class="row">
+                        <form class="col s12">
+                            <h3>Detalles de la Reunion</h1>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="Subject" type="text" class="validate">
+                                    <label for="Subject">Titulo de la entrevista</label>
+                                </div>
+                            </div>
+                            <h6 class="red-text">Datos del candidato:</h6>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">Nombre</label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Apellido</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" class="datepicker">
+                                <label for="Date">Fecha</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" placeholder="cesar@gmail.com;pepe@test.com" class="validate">
+                                <label for="Attendees">Invitados</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" class="timepicker">
+                                <label for="StartTime">Hora Inicial</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" class="timepicker">
+                                <label for="EndTime">Hora Final</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s10">
+                                <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                  </button>
+                            </div>
+
+                          </div>
+                        </form>
+                      </div>
+                    <!-- End Form -->
+                </div>
+
+            </div>
+         </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer section">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Quienes somos?</h5>
+              <p class="white-text">
+                Somos un grupo de ingenieros 
+                La logistica de la entrevista dejala en nuestras manos.
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Contacto</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Clientes</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Testimonios</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Ubicación</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Contáctanos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <span> © 2021 Made by <a href="https://github.com/CesBear" target="_blank"> CesBear</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems);
+  });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+            instance.open();
+            instance.close();
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.timepicker');
+            var instances = M.Timepicker.init(elems);
+        });
+    </script>
+</body>
+</html>

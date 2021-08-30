@@ -17,30 +17,48 @@
 </head>
 <body>
     <!-- Nav Bar -->
-    <nav class="section yellow">
+    <div class="navbar-fixed">
+    <nav class="section auxiliar-1-color">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo"><img src="/assets/images/lynx-green.png" alt=""></a>
+          <a href="#" class="brand-logo css-square"><img src="/assets/images/lynx-green.png" alt=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="./pages/candidatos.html"><i class="fas fa-user-ninja"></i>Candidatos</a></li>
-            <li><a href="./pages/entrevistadores.html"><i class="fas fa-door-open"></i>Entrevistadores</a></li>
-            <li><a href="./pages/calendario.html"><i class="far fa-calendar-check"></i>Agenda tu entrevista!</a></li>
+            <li><a href="index.html"><i class="fas fa-home "></i>Home</a></li>
+            <li><a href="./pages/candidatos.html"><i class="fas fa-user-ninja "></i>Candidatos</a></li>
+            <li><a href="./pages/entrevistadores.html"><i class="fas fa-door-open shaddow-effect"></i>Entrevistadores</a></li>
+            <li><a href="./pages/calendario.html"><i class="far fa-calendar-check shaddow-effect"></i>Agenda tu entrevista!</a></li>
           </ul>
         </div>
       </nav>
+    </div>
+
+    <!--Mobile NavBar-->
+    <ul class="sidenav secondary-bg-color" id="mobile-demo">
+      <ul id="nav-mobile" class="left">
+        <li class="hover-list"><a href="./pages/candidatos.html"><i class="fas fa-user-ninja "></i >Candidatos</a></li>
+        <li><a href="./pages/entrevistadores.html"><i class="fas fa-door-open shaddow-effect"></i>Entrevistadores</a></li>
+        <li><a href="./pages/calendario.html"><i class="far fa-calendar-check shaddow-effect"></i>Agenda tu entrevista!</a></li>
+      </ul>
+    </ul>
 
     <!-- Hero Page -->
     <div class="section hero-image">
       <div class="hero-body">
         <h2>LYNX Interview Manager</h1>
         <h6>Gestiona tus entrevista de una manera efectiva con tus candidatos.</h6>
-         <a class="hero-body waves-effect waves-light btn-large red accent-3"><i class="material-icons right">event</i>Comienza Aquí</a>
+         <a class="waves-effect waves-yellow btn-large red accent-3"><i class="material-icons right">event</i>Comienza Aquí</a>
       </div>
     </div>
 
     <!-- Clientes -->
-    <div class="section quienes somos?">
+    <div class="section primary-bg-color white-text">
+      <div class="row container">
+        <div class="col s12 m10 offset-m1">
+          <h2 class="white-text"> Clientes que confían en nosotros </h2>
+          <img alt="Atlassian Partners" class="clients" src="./assets/images/partner-logos.svg" loading="auto">
+         </div>
+      </div>
     </div>
-
 
     <!-- Main Content Parallax   -->
       <div class="parallax-container">
@@ -49,13 +67,11 @@
         </div>
       </div>
 
-
-      <div class="section yellow">
+      <div class="section secondary-bg-color white-text">
         <div class="row container">
           <div class="col s12 m10 offset-m1">
             <h2 class="header">Agendar entrevistas nunca fue tan fácil</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-          </div>
+           </div>
         </div>
       </div>
 
@@ -65,17 +81,16 @@
         </div>
       </div>
 
-
     <!-- Testimonials  -->
 
     <!-- Footer -->
-    <footer class="page-footer primary-bg-color ¡">
+    <footer class="page-footer section">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
               <h5 class="white-text">Quienes somos?</h5>
-              <p class="grey-text text-lighten-4">
-                Somos una consultoria que ofrce SaaS para ayudar en los procesos de entrevistas. 
+              <p class="white-text">
+                Somos un grupo de ingenieros 
                 La logistica de la entrevista dejala en nuestras manos.
               </p>
             </div>
@@ -92,8 +107,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                <span> © 2021 Made with love by <a href="https://github.com/CesBear" target="_blank"> CesBear</a></span>
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <span> © 2021 Made by <a href="https://github.com/CesBear" target="_blank"> CesBear</a></span>
             </div>
         </div>
     </footer>
@@ -105,6 +119,14 @@
         var elems = document.querySelectorAll('.parallax');
         var instances = M.Parallax.init(elems);
       });
+    </script>
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+        instance.open();
+        instance.close();
+  });
     </script>
 </body>
 </html>
