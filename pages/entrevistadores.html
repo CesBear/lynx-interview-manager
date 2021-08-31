@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynx Interview Manager</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7deeeb5873.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="navbar-fixed">
+        <nav class="section auxiliar-1-color">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo css-square"><img src="/assets/images/lynx-green.png" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html"><i class="fas fa-home "></i>Home</a></li>
+                    <li><a href="./candidatos.html"><i class="fas fa-user-ninja "></i>Candidatos</a></li>
+                    <li><a href="./entrevistadores.html"><i class="fas fa-door-open shaddow-effect"></i>Entrevistadores</a></li>
+                    <li><a href="./calendario.html"><i class="far fa-calendar-check shaddow-effect"></i>Agenda tu entrevista!</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--Mobile NavBar-->
+    <ul class="sidenav secondary-bg-color" id="mobile-demo">
+      <ul id="nav-mobile" class="left">
+        <li><a href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="./pages/candidatos.html"><i class="fas fa-user-ninja "></i >Candidatos</a></li>
+        <li><a href="./pages/entrevistadores.html"><i class="fas fa-door-open shaddow-effect"></i>Entrevistadores</a></li>
+        <li><a href="./pages/calendario.html"><i class="far fa-calendar-check shaddow-effect"></i>Agenda tu entrevista!</a></li>
+      </ul>
+    </ul>
+
+    <!-- -->
+    <div class="section hero-image-not-found">
+        <div class="hero-body">
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="page-footer section">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Quienes somos?</h5>
+              <p class="white-text">
+                Somos un grupo de ingenieros dedicados a dar soluciones en TI.
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Contacto</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#clientesId">Clientes</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://goo.gl/maps/tGqVhdL9dLufGKxX8" target="_blank">Ubicación</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Contáctanos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <span> © 2021 Made by <a href="https://github.com/CesBear" target="_blank"> CesBear</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems);
+  });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+            instance.open();
+            instance.close();
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.timepicker');
+            var instances = M.Timepicker.init(elems);
+        });
+    </script>
+</body>
+</html>

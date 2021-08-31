@@ -52,6 +52,12 @@ span a {
     position: relative;
 }
 
+.hero-image-not-found {
+    background: url("../images/404-hero.jpeg") center/cover;
+    height: 100vh;
+    position: relative;
+}
+
 .hero-body {
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -70,8 +76,8 @@ span a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
-    width: 60%;
+    height: 90%;
+    width: 30%;
 }
 
 h1, h6{
